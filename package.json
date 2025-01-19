@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && mv out/* . && rm -rf out && touch .nojekyll",
-    "deploy": "npm run build && git add . && git diff --quiet && git diff --staged --quiet || git commit -m 'Deploy' && git push",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint && eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
